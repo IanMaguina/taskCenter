@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.taskcenter.app.ui.home.HomeFragment"
+        android:label="@string/spaces"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_spaceDetailFragment"
+            app:destination="@id/spaceDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createSpaceFragment"
+            app:destination="@id/createSpaceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/spaceDetailFragment"
+        android:name="com.taskcenter.app.ui.space.SpaceDetailFragment"
+        android:label="@string/space_detail"
+        tools:layout="@layout/fragment_space_detail">
+        <argument
+            android:name="spaceId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_spaceDetailFragment_to_createTaskFragment"
+            app:destination="@id/createTaskFragment" />
+        <action
+            android:id="@+id/action_spaceDetailFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+        <action
+            android:id="@+id/action_spaceDetailFragment_to_membersFragment"
+            app:destination="@id/membersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createSpaceFragment"
+        android:name="com.taskcenter.app.ui.space.CreateSpaceFragment"
+        android:label="@string/create_space"
+        tools:layout="@layout/fragment_create_space" />
+
+    <fragment
+        android:id="@+id/createTaskFragment"
+        android:name="com.taskcenter.app.ui.task.CreateTaskFragment"
+        android:label="@string/add_task"
+        tools:layout="@layout/fragment_create_task">
+        <argument
+            android:name="spaceId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.taskcenter.app.ui.task.TaskDetailFragment"
+        android:label="@string/task_detail"
+        tools:layout="@layout/fragment_task_detail">
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+        <argument
+            android:name="spaceId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/membersFragment"
+        android:name="com.taskcenter.app.ui.space.MembersFragment"
+        android:label="@string/members"
+        tools:layout="@layout/fragment_members">
+        <argument
+            android:name="spaceId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.taskcenter.app.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

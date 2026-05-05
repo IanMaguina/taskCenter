@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">TaskCenter</string>
+    <string name="service_running">Servicio activo en red local</string>
+
+    <!-- Navigation -->
+    <string name="spaces">Espacios</string>
+    <string name="profile">Perfil</string>
+    <string name="space_detail">Detalle del Espacio</string>
+    <string name="task_detail">Detalle de Tarea</string>
+    <string name="members">Miembros</string>
+
+    <!-- Home -->
+    <string name="no_spaces">No hay espacios disponibles.\nCrea uno o descubre espacios en la red.</string>
+
+    <!-- Space -->
+    <string name="create_space">Crear Espacio</string>
+    <string name="space_name">Nombre del espacio</string>
+    <string name="space_description">Descripción (opcional)</string>
+    <string name="enable_rewards">Habilitar premios</string>
+    <string name="enable_rewards_hint">Los creadores de tareas podrán agregar puntos de premio</string>
+    <string name="delete_space">Eliminar Espacio</string>
+    <string name="delete_space_confirm">¿Estás seguro de que deseas eliminar este espacio? Se eliminarán todas las tareas.</string>
+    <string name="no_members">No hay miembros aún</string>
+
+    <!-- Task -->
+    <string name="tasks">Tareas</string>
+    <string name="add_task">Agregar Tarea</string>
+    <string name="task_name">Nombre de la tarea</string>
+    <string name="task_description">Descripción (opcional)</string>
+    <string name="estimated_time_hint">Tiempo estimado (minutos)</string>
+    <string name="reward_hint">Premio (puntos)</string>
+    <string name="no_tasks">No hay tareas en este espacio.</string>
+    <string name="take_task">Tomar tarea</string>
+    <string name="take_task_confirm">¿Deseas tomar esta tarea? Se te asignará y comenzará el conteo de tiempo.</string>
+    <string name="complete_task">Marcar como completada</string>
+    <string name="complete_task_confirm">¿Deseas marcar esta tarea como completada?</string>
+
+    <!-- Task status -->
+    <string name="status_pending">Pendiente</string>
+    <string name="status_in_progress">En progreso</string>
+    <string name="status_completed">Completada</string>
+
+    <!-- Profile -->
+    <string name="your_profile">Tu Perfil</string>
+    <string name="your_name">Tu nombre</string>
+    <string name="device_info">Información del dispositivo</string>
+    <string name="profile_hint">Otros en tu red verán tu nombre cuando tomes o completes tareas.</string>
+    <string name="save">Guardar</string>
+
+    <!-- Common -->
+    <string name="delete">Eliminar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="take">Tomar</string>
+    <string name="complete">Completar</string>
+</resources>
